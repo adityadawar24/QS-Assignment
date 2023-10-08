@@ -1,0 +1,41 @@
+.boardColumn {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  max-width: calc(33.33% - 20px);
+}
+
+.Title {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.icon-button:hover {
+  color: #007bff;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .boardColumn {
+    max-width: calc(50% - 20px);
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .boardColumn {
+    max-width: calc(100% - 20px); 
+  }
+}

@@ -1,0 +1,40 @@
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .board-columns {
+    display: flex;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .kanban-board {
+      padding: 10px;
+    }
+  
+    .options {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .options button {
+      margin-top: 10px;
+    }
+  
+    .board-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
